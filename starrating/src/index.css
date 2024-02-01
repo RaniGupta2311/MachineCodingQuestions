@@ -1,0 +1,19 @@
+*{
+  margin:0;
+}
+body{
+  background-color: cornsilk;
+}
+.App{
+  display:flex;
+  justify-content: center;
+  padding:20px;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  letter-spacing: 0.2rem;
+}
+input[type="radio"]{
+  display: none;
+}
