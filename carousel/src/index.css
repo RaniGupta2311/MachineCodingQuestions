@@ -1,0 +1,38 @@
+*{
+  margin:0;
+}
+.App{
+  margin-top: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+}
+.App h1{
+  letter-spacing: 0.2rem;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+.image-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width:500px;
+  height:300px;
+}
+
+button{
+  padding:10px;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 25px;
+}
