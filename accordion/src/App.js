@@ -3,7 +3,14 @@ import Card from "./Card";
 import {data} from "./Data"
 
 function App() {
-  const [showIndex,setShowIndex]=useState(null)
+  const [showIndex,setShowIndex]=useState(null);
+  const handleSetShowIndex=(index)=>{
+    if(showIndex===index){
+      setShowIndex();
+      return
+    }
+    setShowIndex(index);
+  }
   return (
     <div className="App">
         <div className="center_div">
@@ -12,7 +19,7 @@ function App() {
             <div className="items_container">
             {
               data.map((ele,index)=>{
-              return <Card {...ele} showItems={index===showIndex?true:false} handleSetShowIndex={()=>setShowIndex(index)}/>
+              return <Card {...ele} showItems={index===showIndex?true:false} handleSetShowIndex={()=>handleSetShowIndex(index)}/>
             })
             }
             </div>
