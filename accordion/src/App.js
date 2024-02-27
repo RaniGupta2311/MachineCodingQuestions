@@ -6,7 +6,7 @@ function App() {
   const [showIndex,setShowIndex]=useState(null);
   const handleSetShowIndex=(index)=>{
     if(showIndex===index){
-      setShowIndex();
+      setShowIndex(-1);
       return
     }
     setShowIndex(index);
