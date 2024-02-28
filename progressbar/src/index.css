@@ -1,0 +1,31 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top:30px;
+}
+.progressbar{
+  position: relative;
+  overflow: hidden;
+  width:350px;
+  height:35px;
+  border-radius: 5px;
+  background-color: grey;
+}
+.progressPercent{
+  font-weight: 600;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  color:#eee;
+}
+.btn{
+  margin:20px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: green;
+  color:white;
+}
